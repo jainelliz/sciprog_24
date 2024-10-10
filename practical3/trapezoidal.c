@@ -5,9 +5,10 @@ int main(void) {
     int N = 12;
     float a = 0;
     float b = M_PI / 3;
+    float a_deg = (180 / M_PI) * a;
     float b_deg = (180 / M_PI) * b;
     float sum = 0;
-    float gap = (b_deg-a) / N;
+    float gap = (b_deg-a_deg) / N;
     float calc_integral = 0;
     
     printf("The value of b is %f radians, i.e., %f degrees\n", b, b_deg);
